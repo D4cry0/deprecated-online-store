@@ -1,0 +1,14 @@
+Dockerfile
+.dockerignore
+node_modules
+npm-debug.log
+README.md
+src/client/.next
+.git
+dist
+.vscode
+.gitignore
+temp
+container
+base
+.env

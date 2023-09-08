@@ -1,0 +1,158 @@
+import React, { FC, useContext, useEffect, useState } from 'react';
+
+import { Button, Card, Col, Container, Row } from 'react-bootstrap';
+
+import { InformativeInput } from '../molecules';
+import { PasswordMatch } from '../organisms/PasswordMatch';
+
+import { LoginContext } from '@/context/ui.login';
+import { LoginPlaceHolders } from '@/interfaces';
+
+interface Props {
+    isAdmin: boolean
+    view: LoginPlaceHolders;
+}
+
+export const UILogin: FC<Props> = ({ isAdmin, view }) => {
+
+    const { state, setField } = useContext( LoginContext );
+
+    const [ modeLogin, setModeLogin ] = useState(isAdmin);
+
+    const onSetUserName = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setField('user', e.target.value);
+    }
+
+    const onSetMail = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setField('email', e.target.value);
+    }
+
+    const onSetPass = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setField('pass', e.target.value);
+    }
+
+    const onRegister = () => {
+        if( isAdmin ){
+            // new account
+        } else {
+            // change to Register mode
+            setModeLogin( false );
+        }
+    }
+
+    const onLogin = () => {
+        if( isAdmin ){
+            // login
+        } else {
+            // change to login mode
+            setModeLogin( true );
+        }
+    }
+
+    return (
+        <section className='py-4 py-xl-5'>
+            <Container >
+                <Row className='d-flex justify-content-center'>
+                    <Col md='8' lg='6' xl='5' xxl='4'>
+                        <Card className='mb-5'>
+                            <Card.Body className='p-sm-5'>
+                                <h2 className="text-uppercase text-center mb-4">{view.title}</h2>
+
+                                <div className="my-3">
+                                    <InformativeInput
+                                        id='inUser'
+                                        inputValue={state.user}
+                                        onInputChange={onSetUserName}
+                                        type='text'
+                                        autoFocus={true}
+                                        placeholder={view.user.placeholder}
+                                        msgValue={view.user.msgValue}
+                                    />
+                                </div>
+
+                                <div className="my-3">
+                                    <input type={'text'} className='form-control form-control-lg' />
+
+                                </div>
+
+
+                                <div className="my-3">
+                                    <InformativeInput
+                                        id='inEmail'
+                                        inputValue={state.email}
+                                        onInputChange={onSetMail}
+                                        type='email'
+                                        placeholder={view.email.placeholder}
+                                        msgValue={view.email.msgValue}
+                                    />
+                                </div>
+                                {
+                                    modeLogin &&
+                                    <InformativeInput
+                                        id='inPass'
+                                        inputValue={state.pass}
+                                        onInputChange={onSetPass}
+                                        type='password'
+                                        placeholder={view.pass.placeholder}
+                                        msgValue={view.pass.requiredMsg}
+                                    />
+                                }
+
+                                {
+                                    !isAdmin && !modeLogin &&
+                                    <PasswordMatch
+                                        pass={state.pass}
+                                        onChangePass={onSetPass}
+                                        placeholder={view.pass.placeholder}
+                                        requiredMsg={view.pass.requiredMsg}
+                                        validateErrorMsg={view.pass.validateErrorMsg}
+                                        className='my-3'
+                                    />
+                                }
+                                
+
+
+                                <div className="my-5">
+                                    {
+                                        !isAdmin && !modeLogin &&
+                                        <Button
+                                            variant='danger'
+                                            type='button'
+                                            className='d-block w-100 my-3'
+                                            onClick={onRegister}
+                                        >
+                                            {view.btnRegister.placeholder}
+                                        </Button>
+                                    }
+                                    
+                                    <Button
+                                        variant={ modeLogin ? 'primary' : 'outline-primary'}
+                                        type='button'
+                                        className='d-block w-100 my-3'
+                                        onClick={onLogin}
+                                    >
+                                        {view.btnLogin.placeholder}
+                                    </Button>
+
+                                    {
+                                        modeLogin && !isAdmin &&
+                                        <Button
+                                            variant='outline-danger'
+                                            type='button'
+                                            className='d-block w-100 my-3'
+                                            onClick={onRegister}
+                                        >
+                                            {view.btnRegister.placeholder}
+                                        </Button>
+                                    }
+                                    
+                                    <small className="form-text">{view.error}</small>
+                                </div>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                </Row>
+            </Container>
+        </section>
+    )
+}

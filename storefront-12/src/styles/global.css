@@ -1,0 +1,238 @@
+@tailwind base;
+@tailwind components;
+
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/fonts/MaterialIcons-Regular.ttf); /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"),
+    url(/assets/fonts/MaterialIcons-Regular.ttf) format("truetype");
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+@font-face {
+  font-family: "Material Icons Outlined";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/fonts/MaterialIconsOutlined-Regular.otf); /* For IE6-8 */
+  src: local("Material Icons Outlined"), local("MaterialIcons-Outlined"),
+    url(/assets/fonts/MaterialIconsOutlined-Regular.otf) format("opentype");
+}
+
+.material-icons-outlined {
+  font-family: "Material Icons Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+@font-face {
+  font-family: "Material Icons Round";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/fonts/MaterialIconsRound-Regular.otf); /* For IE6-8 */
+  src: local("Material Icons Round"), local("MaterialIcons-Round"),
+    url(/assets/fonts/MaterialIconsRound-Regular.otf) format("opentype");
+}
+
+.material-icons-round {
+  font-family: "Material Icons Round";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+@font-face {
+  font-family: "Material Icons Sharp";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/fonts/MaterialIconsSharp-Regular.otf); /* For IE6-8 */
+  src: local("Material Icons Sharp"), local("MaterialIcons-Sharp"),
+    url(/assets/fonts/MaterialIconsSharp-Regular.otf) format("opentype");
+}
+
+.material-icons-sharp {
+  font-family: "Material Icons Sharp";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+@font-face {
+  font-family: "Material Icons TwoTone";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/fonts/MaterialIconsTwoTone-Regular.otf); /* For IE6-8 */
+  src: local("Material Icons TwoTone"), local("MaterialIcons-TwoTone"),
+    url(/assets/fonts/MaterialIconsTwoTone-Regular.otf) format("opentype");
+}
+
+.material-icons-twotone {
+  font-family: "Material Icons TwoTone";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+#video-hero {
+  display: block;
+  position: relative;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+}
+
+#imghero {
+  width: auto;
+}
+
+@media (max-width: 576px) {
+  #imghero {
+    height: 100px;
+  }
+}
+@media (min-width: 576px) {
+  #imghero {
+    height: 100px;
+  }
+}
+@media (min-width: 768px) {
+  #imghero {
+    height: 150px;
+  }
+}
+@media (min-width: 992px) {
+  #imghero {
+    height: 200px;
+  }
+}
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+@media screen and (max-width: 767px) {
+  .whatsapp-float {
+    width: 59px;
+    height: 59px;
+    bottom: 20px;
+    right: 10px;
+  }
+}
+
+@tailwind utilities;

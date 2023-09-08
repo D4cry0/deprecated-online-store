@@ -1,0 +1,134 @@
+{
+    "Hero_Video_Banner": {
+        "TITLE": "Visita nuestra sección de promociones"
+    },
+    "Login_Page": {    
+        "TITLE": "Iniciar Sesión",
+        "TITLE_REGISTER": "Registrar",
+        "TextField_User": {
+            "PLACEHOLDER": "Usuario",
+            "MSG_REQUIRED_VALUE": "El usuario es obligatorio",
+            "MSG_NOT_VALID": "Usuario no valido. Límite 45 caracteres",
+            "MSG_DUPLICATE_USER": "El usuario ya esta registrado"
+        },
+        "TextField_Password": {
+            "PLACEHOLDER": "Contraseña",
+            "MSG_REQUIRED_VALUE": "La contraseña es obligatoria",
+            "MSG_NOT_EQUAL": "Las contraseñas no coinciden",
+            "MSG_NOT_VALID": "La contraseña debe ser: mínimo de 8 caracteres y se recomienda incluir: símbolos, números, minúsculas y mayúsculas."
+        },
+        "TextField_Email": {
+            "PLACEHOLDER": "Correo electrónico",
+            "MSG_REQUIRED_VALUE": "El correo electrónico es obligatorio",
+            "MSG_NOT_VALID": "El correo electrónico no es valido",
+            "MSG_DUPLICATE_EMAIL": "El correo ya esta registrado"
+        },
+        "BUTTON_REGISTER": "Crear cuenta",
+        "BUTTON_LOGIN": "Iniciar sesión",
+        "SYSTEM_ERROR_PASSWORD": "Usuario y/o contraseña incorrectos",
+        "SYSTEM_ERROR_PERMISSIONS": "Sin permisos suficientes"
+    },
+    "Logout_Page": {
+        "TITLE": "Iniciar Sesión",
+        "MSG_LOGOUT": "Cerrando sesión..."
+    },
+    "Verify_Account_Page": {
+        "TITLE": "Verifica tus datos de envío",
+        "CREATE_ACCOUNT": "Crear/activar cuenta de usuario",
+        "SELECT_DROPDOWN_PLACEHOLDER": "Selecciona",
+        "TextField_Contact_Name": {
+            "PLACEHOLDER": "Nombre de contacto",
+            "MSG_REQUIRED_VALUE": "El nombre es obligatorio",
+            "MSG_NOT_VALID": "El nombre no es valido. Límite 45 caracteres"
+        },
+        "TextField_Last_Name": {
+            "PLACEHOLDER": "Apellidos",
+            "MSG_REQUIRED_VALUE": "Los apellidos son obligatorios",
+            "MSG_NOT_VALID": "Los apellidos no son validos. Límite 45 caracteres"
+        },
+        "TextField_Company": {
+            "PLACEHOLDER": "Nombre comercial",
+            "MSG_NOT_VALID": "El nombre de la compañía no es valido. Límite 45 caracteres"
+        },
+        "TextField_Org_Name": {
+            "PLACEHOLDER": "Razón social",
+            "MSG_NOT_VALID": "La razón social no es valida. Límite 45 caracteres"
+        },
+        "TextField_Phone": {
+            "PLACEHOLDER": "Teléfono de contacto",
+            "PLACEHOLDER_FORMAT": "Formato: 11-22334455",
+            "MSG_REQUIRED_VALUE": "El número de teléfono es obligatorio",
+            "MSG_NOT_VALID": "El número de teléfono no es valido. Formato: 33-11119999",
+            "MSG_DUPLICATE_PHONE": "El número de teléfono ya esta registrado"
+        },
+        "TextField_Tax_Id": {
+            "PLACEHOLDER": "RFC",
+            "MSG_NOT_VALID": "El RFC no es valido. Solo mayúsculas."
+        },
+        "Select_Parcel_Supplier": {
+            "PLACEHOLDER": "Paquetería",
+            "MSG_REQUIRED_VALUE": "Selecciona una paquetería"
+        },
+        "Select_Destiny": {
+            "PLACEHOLDER": "Destino",
+            "MSG_REQUIRED_VALUE": "Los destinos validos son domicilio u ocurre"
+        },
+        "TextField_Address": {
+            "PLACEHOLDER": "Calle",
+            "MSG_REQUIRED_VALUE": "El nombre de la calle es obligatorio",
+            "MSG_NOT_VALID": "Límite 100 caracteres"
+        },
+        "TextField_Second_Address": {
+            "PLACEHOLDER": "Dirección complementaria (no referencias)",
+            "MSG_NOT_VALID": "Límite 100 caracteres"
+        },
+        "Label_Ext_Int_Number": {
+            "TEXT": "Selecciona en caso de tener número exterior o interior"
+        },
+        "TextField_Ext_Number": {
+            "PLACEHOLDER": "Exterior",
+            "MSG_REQUIRED_VALUE": "Debe ingresar la información si selecciono el número exterior o interior",
+            "MSG_NOT_VALID": "Límite 5 caracteres"
+        },
+        "TextField_Int_Number": {
+            "PLACEHOLDER": "Interior",
+            "MSG_REQUIRED_VALUE": "Debe ingresar la información si selecciono el número exterior o interior",
+            "MSG_NOT_VALID": "Límite 5 caracteres"
+        },
+        "TextField_District": {
+            "PLACEHOLDER": "Colonia",
+            "MSG_REQUIRED_VALUE": "La colonia es obligatoria",
+            "MSG_NOT_VALID": "Límite 120 caracteres"
+        },
+        "TextField_Postal_Code": {
+            "PLACEHOLDER": "Código postal",
+            "MSG_REQUIRED_VALUE": "El código postal es obligatorio",
+            "MSG_NOT_VALID": "Límite 10 caracteres"
+        },
+        "TextField_City": {
+            "PLACEHOLDER": "Ciudad",
+            "MSG_REQUIRED_VALUE": "La ciudad es obligatoria",
+            "MSG_NOT_VALID": "Límite 30 caracteres"
+        },
+        "Select_State": {
+            "PLACEHOLDER": "Estado",
+            "MSG_REQUIRED_VALUE": "Selecciona un estado"
+        },
+        "Select_Country": {
+            "PLACEHOLDER": "País",
+            "MSG_REQUIRED_VALUE": "Selecciona una país"
+        },
+        "TextArea_Reference": {
+            "PLACEHOLDER": "Referencias o notas del domicilio",
+            "MSG_NOT_VALID": "Límite 200 caracteres"
+        },
+        "BUTTON_VERIFY": "Aceptar",
+        "MSG_ACCOUNT_VERIFIED": "Información actualizada, para realizar algún cambio contáctenos de nuevo",
+        "MSG_SAVED": "Guardado con éxito",
+        "SYSTEM_ERROR_LINK_EXPIRE": "El enlace caduco, contacte con atención al cliente",
+        "SYSTEM_ERROR_ACCOUNT_DETAILS": "Error en el registro contacte a atención al cliente",
+        "SYSTEM_ERROR_ACCOUNT_ACTIVE": "Contacte a atención al cliente para revisar el estado de su cuenta"
+    },
+    "SYSTEM_ERROR": "Error en el servidor, intente de nuevo o contacte con atención al cliente",
+    "SYSTEM_DB_ERROR": "Error en la base de datos, contacte con atención al cliente"
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> header }}
+<body>
+    <div>
+        <h1 class='text-center p-5'>
+            {{ titulo }}
+        </h1>
+
+        <div class="d-flex justify-content-center">
+            <div class="d-flex flex-column justify-content-center w-50">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="lblUser">Usuario</span>
+                    <input id="user" type="text" class="form-control">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="lblPss">Contraseña</span>
+                    <input id="userp" type="password" class="form-control">
+                </div>
+                <span id="lblMsg" class="p-1">{{msg}}</span>
+                <button id="login" type="button" class="btn btn-primary">Login</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/xstar/assets/js/access.js"></script>
+</body>
+</html>
